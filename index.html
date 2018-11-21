@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0, target-densitydpi=device-dpi">
+    <meta name="keywords" content="creative coding, algorithmic art, p5js, p5, processing">
+    <title>codevember 10 | Tree</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+    <style>
+      html, body { margin: 0; padding: 0; overflow: hidden; }
+      #title {
+          position: absolute;
+          top: 10px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          color: black;
+          font-family: monospace;
+          opacity: 0;
+          transition: 1s opacity;
+          animation-name: fade-out;
+          animation-duration: 3s;
+        }
+  
+        #title:hover {
+          opacity: 1;
+        }
+  
+        @keyframes fade-out {
+          0%,67% { opacity: 1; }
+          100% { opacity: 0; }
+        }
+    </style>
+  </head>
+  <body>
+    <div id="title">codevember 10 | Apple</div>
+    <script src="js/three.js"></script>
+    <script src="js/MTLLoader.js"></script>
+    <script src="js/OBJLoader.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
